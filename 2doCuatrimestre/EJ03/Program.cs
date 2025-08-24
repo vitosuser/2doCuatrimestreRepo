@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EJ05
+namespace EJ03
 {
     internal class Program
     {
