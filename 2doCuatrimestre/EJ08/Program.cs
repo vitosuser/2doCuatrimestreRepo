@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace EJ07
+namespace EJ08
 {
-    /*ingresar el valor de la hs de cada categoría, guardarlo en 
-			Un vector y luego ingresar los empleados de la empresa 
-			Hasta legajo = 0, indicar el sueldo de cada empleado y el 
-			Total a pagar 
+    /*ingrese el valor de la hs de cada categoría
+Indique el sueldo de cada empleado, la cantidad de empleados por categoría
+Valor total a pagar en calidad de sueldos
+ 
 */
     internal class Program
     {
