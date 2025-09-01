@@ -27,7 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJ03", "EJ03\EJ03.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinForms", "WinForms", "{892A5BB3-DA4B-4129-A00B-6946183BEA02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{F51A18BF-6EC2-464F-891B-ADF155740671}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prueba clase", "WinFormsApp1\prueba clase.csproj", "{F51A18BF-6EC2-464F-891B-ADF155740671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prueba inicio sesion", "WinFormsApp2\prueba inicio sesion.csproj", "{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,10 @@ Global
 		{F51A18BF-6EC2-464F-891B-ADF155740671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F51A18BF-6EC2-464F-891B-ADF155740671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F51A18BF-6EC2-464F-891B-ADF155740671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +102,7 @@ Global
 		{5C5BA67C-7FF8-447A-9419-23615742C9CD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{892A5BB3-DA4B-4129-A00B-6946183BEA02} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F51A18BF-6EC2-464F-891B-ADF155740671} = {892A5BB3-DA4B-4129-A00B-6946183BEA02}
+		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB} = {892A5BB3-DA4B-4129-A00B-6946183BEA02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EE71410-DF5E-4905-A7AD-80C6D9AB76EB}
