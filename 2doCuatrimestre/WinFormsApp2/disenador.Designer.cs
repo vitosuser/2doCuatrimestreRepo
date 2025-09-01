@@ -34,7 +34,7 @@
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             labelNoCuenta = new Label();
-            buttonRegister = new Button();
+            btnRegister = new Button();
             SuspendLayout();
             // 
             // labelTitulo
@@ -46,7 +46,6 @@
             labelTitulo.Size = new Size(291, 46);
             labelTitulo.TabIndex = 0;
             labelTitulo.Text = "INICIO DE SESION";
-            labelTitulo.Click += this.label1_Click;
             // 
             // labelUser
             // 
@@ -67,7 +66,6 @@
             labelPassword.Size = new Size(133, 30);
             labelPassword.TabIndex = 2;
             labelPassword.Text = "Contraseña: ";
-            labelPassword.Click += this.label1_Click_1;
             // 
             // textBox1
             // 
@@ -94,18 +92,17 @@
             labelNoCuenta.Size = new Size(175, 23);
             labelNoCuenta.TabIndex = 5;
             labelNoCuenta.Text = "No tiene una cuenta?";
-            labelNoCuenta.Click += this.label1_Click_2;
             // 
-            // buttonRegister
+            // btnRegister
             // 
-            buttonRegister.ForeColor = SystemColors.HotTrack;
-            buttonRegister.Location = new Point(483, 409);
-            buttonRegister.Name = "buttonRegister";
-            buttonRegister.Size = new Size(137, 33);
-            buttonRegister.TabIndex = 6;
-            buttonRegister.Text = "Registrece aqui";
-            buttonRegister.UseVisualStyleBackColor = false;
-            buttonRegister.Click += this.buttonRegister_Click;
+            btnRegister.ForeColor = SystemColors.HotTrack;
+            btnRegister.Location = new Point(483, 409);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(137, 33);
+            btnRegister.TabIndex = 6;
+            btnRegister.Text = "Registrece aqui";
+            btnRegister.UseVisualStyleBackColor = false;
+            btnRegister.Click += btnRegister_Click;
             // 
             // disenador
             // 
@@ -113,7 +110,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(900, 518);
-            Controls.Add(buttonRegister);
+            Controls.Add(btnRegister);
             Controls.Add(labelNoCuenta);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
@@ -135,6 +132,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Label labelNoCuenta;
-        private Button buttonRegister;
+        private Button btnRegister;
     }
 }
