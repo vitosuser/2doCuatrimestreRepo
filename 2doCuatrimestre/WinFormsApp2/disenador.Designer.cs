@@ -31,19 +31,20 @@
             labelTitulo = new Label();
             labelUser = new Label();
             labelPassword = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUser = new TextBox();
+            txtPass = new TextBox();
             labelNoCuenta = new Label();
             btnRegister = new Button();
+            btnLogIn = new Button();
             SuspendLayout();
             // 
             // labelTitulo
             // 
             labelTitulo.AutoSize = true;
             labelTitulo.Font = new Font("Segoe UI", 20F);
-            labelTitulo.Location = new Point(292, 10);
+            labelTitulo.Location = new Point(326, 9);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(291, 46);
+            labelTitulo.Size = new Size(231, 37);
             labelTitulo.TabIndex = 0;
             labelTitulo.Text = "INICIO DE SESION";
             // 
@@ -51,9 +52,9 @@
             // 
             labelUser.AutoSize = true;
             labelUser.Font = new Font("Segoe UI", 13F);
-            labelUser.Location = new Point(172, 143);
+            labelUser.Location = new Point(191, 145);
             labelUser.Name = "labelUser";
-            labelUser.Size = new Size(97, 30);
+            labelUser.Size = new Size(81, 25);
             labelUser.TabIndex = 1;
             labelUser.Text = "Usuario: ";
             // 
@@ -63,40 +64,41 @@
             labelPassword.Font = new Font("Segoe UI", 13F);
             labelPassword.Location = new Point(172, 273);
             labelPassword.Name = "labelPassword";
-            labelPassword.Size = new Size(133, 30);
+            labelPassword.Size = new Size(110, 25);
             labelPassword.TabIndex = 2;
             labelPassword.Text = "Contraseña: ";
             // 
-            // textBox1
+            // txtUser
             // 
-            textBox1.Font = new Font("Segoe UI", 10F);
-            textBox1.Location = new Point(288, 146);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(304, 30);
-            textBox1.TabIndex = 3;
+            txtUser.Font = new Font("Segoe UI", 10F);
+            txtUser.Location = new Point(288, 146);
+            txtUser.Name = "txtUser";
+            txtUser.Size = new Size(304, 25);
+            txtUser.TabIndex = 3;
+            txtUser.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtPass
             // 
-            textBox2.Font = new Font("Segoe UI", 10F);
-            textBox2.Location = new Point(315, 273);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(304, 30);
-            textBox2.TabIndex = 4;
+            txtPass.Font = new Font("Segoe UI", 10F);
+            txtPass.Location = new Point(292, 273);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(304, 25);
+            txtPass.TabIndex = 4;
             // 
             // labelNoCuenta
             // 
             labelNoCuenta.AutoSize = true;
             labelNoCuenta.Font = new Font("Segoe UI", 10F);
-            labelNoCuenta.Location = new Point(288, 412);
+            labelNoCuenta.Location = new Point(288, 455);
             labelNoCuenta.Name = "labelNoCuenta";
-            labelNoCuenta.Size = new Size(175, 23);
+            labelNoCuenta.Size = new Size(139, 19);
             labelNoCuenta.TabIndex = 5;
             labelNoCuenta.Text = "No tiene una cuenta?";
             // 
             // btnRegister
             // 
             btnRegister.ForeColor = SystemColors.HotTrack;
-            btnRegister.Location = new Point(483, 409);
+            btnRegister.Location = new Point(482, 447);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(137, 33);
             btnRegister.TabIndex = 6;
@@ -104,22 +106,34 @@
             btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
             // 
+            // btnLogIn
+            // 
+            btnLogIn.Location = new Point(396, 357);
+            btnLogIn.Name = "btnLogIn";
+            btnLogIn.Size = new Size(111, 34);
+            btnLogIn.TabIndex = 7;
+            btnLogIn.Text = "Iniciar sesion";
+            btnLogIn.UseVisualStyleBackColor = true;
+            btnLogIn.Click += btnLogIn_Click;
+            // 
             // disenador
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(900, 518);
+            Controls.Add(btnLogIn);
             Controls.Add(btnRegister);
             Controls.Add(labelNoCuenta);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtPass);
+            Controls.Add(txtUser);
             Controls.Add(labelPassword);
             Controls.Add(labelUser);
             Controls.Add(labelTitulo);
             Font = new Font("Segoe UI", 10F);
             Name = "disenador";
             Text = "ACCESO A SISTEMA";
+            Load += disenador_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -129,9 +143,10 @@
         private Label labelTitulo;
         private Label labelUser;
         private Label labelPassword;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUser;
+        private TextBox txtPass;
         private Label labelNoCuenta;
         private Button btnRegister;
+        private Button btnLogIn;
     }
 }
