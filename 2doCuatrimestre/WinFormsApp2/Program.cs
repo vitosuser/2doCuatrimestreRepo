@@ -14,4 +14,9 @@ namespace WinFormsApp2
             Application.Run(new disenador());
         }
     }
+
+    public static class DatosInicio
+    {
+        public static string[,] datos = new string[2, 4];
+    }
 }

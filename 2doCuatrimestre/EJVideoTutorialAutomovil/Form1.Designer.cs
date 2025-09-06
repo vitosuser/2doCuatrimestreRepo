@@ -31,12 +31,12 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.gboxSeguro = new System.Windows.Forms.GroupBox();
-            this.rbRespCivil = new System.Windows.Forms.RadioButton();
-            this.rbTodoRiesgo = new System.Windows.Forms.RadioButton();
             this.rbTerceros = new System.Windows.Forms.RadioButton();
+            this.rbTodoRiesgo = new System.Windows.Forms.RadioButton();
+            this.rbRespCivil = new System.Windows.Forms.RadioButton();
             this.gbEquip = new System.Windows.Forms.GroupBox();
-            this.ckbAire = new System.Windows.Forms.CheckBox();
             this.ckbAudio = new System.Windows.Forms.CheckBox();
+            this.ckbAire = new System.Windows.Forms.CheckBox();
             this.lblCosto = new System.Windows.Forms.Label();
             this.txtCosto = new System.Windows.Forms.TextBox();
             this.btnCotizar = new System.Windows.Forms.Button();
@@ -75,6 +75,28 @@
             this.gboxSeguro.Text = "Seleccion Seguro:";
             this.gboxSeguro.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // rbTerceros
+            // 
+            this.rbTerceros.AutoSize = true;
+            this.rbTerceros.Location = new System.Drawing.Point(25, 65);
+            this.rbTerceros.Name = "rbTerceros";
+            this.rbTerceros.Size = new System.Drawing.Size(101, 17);
+            this.rbTerceros.TabIndex = 2;
+            this.rbTerceros.Text = "Contra Terceros";
+            this.rbTerceros.UseVisualStyleBackColor = true;
+            this.rbTerceros.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // rbTodoRiesgo
+            // 
+            this.rbTodoRiesgo.AutoSize = true;
+            this.rbTodoRiesgo.Location = new System.Drawing.Point(25, 104);
+            this.rbTodoRiesgo.Name = "rbTodoRiesgo";
+            this.rbTodoRiesgo.Size = new System.Drawing.Size(86, 17);
+            this.rbTodoRiesgo.TabIndex = 1;
+            this.rbTodoRiesgo.Text = "Todo Riesgo";
+            this.rbTodoRiesgo.UseVisualStyleBackColor = true;
+            this.rbTodoRiesgo.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
             // rbRespCivil
             // 
             this.rbRespCivil.AutoSize = true;
@@ -88,28 +110,6 @@
             this.rbRespCivil.UseVisualStyleBackColor = true;
             this.rbRespCivil.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // rbTodoRiesgo
-            // 
-            this.rbTodoRiesgo.AutoSize = true;
-            this.rbTodoRiesgo.Location = new System.Drawing.Point(25, 104);
-            this.rbTodoRiesgo.Name = "rbTodoRiesgo";
-            this.rbTodoRiesgo.Size = new System.Drawing.Size(86, 17);
-            this.rbTodoRiesgo.TabIndex = 1;
-            this.rbTodoRiesgo.Text = "Todo Riesgo";
-            this.rbTodoRiesgo.UseVisualStyleBackColor = true;
-            this.rbTodoRiesgo.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // rbTerceros
-            // 
-            this.rbTerceros.AutoSize = true;
-            this.rbTerceros.Location = new System.Drawing.Point(25, 65);
-            this.rbTerceros.Name = "rbTerceros";
-            this.rbTerceros.Size = new System.Drawing.Size(101, 17);
-            this.rbTerceros.TabIndex = 2;
-            this.rbTerceros.Text = "Contra Terceros";
-            this.rbTerceros.UseVisualStyleBackColor = true;
-            this.rbTerceros.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
-            // 
             // gbEquip
             // 
             this.gbEquip.Controls.Add(this.ckbAudio);
@@ -122,6 +122,16 @@
             this.gbEquip.Text = "Equipamento:";
             this.gbEquip.Enter += new System.EventHandler(this.groupBox1_Enter_1);
             // 
+            // ckbAudio
+            // 
+            this.ckbAudio.AutoSize = true;
+            this.ckbAudio.Location = new System.Drawing.Point(34, 65);
+            this.ckbAudio.Name = "ckbAudio";
+            this.ckbAudio.Size = new System.Drawing.Size(107, 17);
+            this.ckbAudio.TabIndex = 1;
+            this.ckbAudio.Text = "Sistema de audio";
+            this.ckbAudio.UseVisualStyleBackColor = true;
+            // 
             // ckbAire
             // 
             this.ckbAire.AutoSize = true;
@@ -132,16 +142,6 @@
             this.ckbAire.Text = "Aire acondicionado";
             this.ckbAire.UseVisualStyleBackColor = true;
             this.ckbAire.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // ckbAudio
-            // 
-            this.ckbAudio.AutoSize = true;
-            this.ckbAudio.Location = new System.Drawing.Point(34, 65);
-            this.ckbAudio.Name = "ckbAudio";
-            this.ckbAudio.Size = new System.Drawing.Size(107, 17);
-            this.ckbAudio.TabIndex = 1;
-            this.ckbAudio.Text = "Sistema de audio";
-            this.ckbAudio.UseVisualStyleBackColor = true;
             // 
             // lblCosto
             // 
@@ -195,6 +195,7 @@
             this.Controls.Add(this.lblNombre);
             this.Name = "Form1";
             this.Text = "Cotizacion";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gboxSeguro.ResumeLayout(false);
             this.gboxSeguro.PerformLayout();
             this.gbEquip.ResumeLayout(false);

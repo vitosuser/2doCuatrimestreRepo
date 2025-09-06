@@ -15,7 +15,7 @@ namespace WinFormsApp2
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-
+            formRegister registro = new formRegister();
             registro.ShowDialog();
 
         }
@@ -32,22 +32,36 @@ namespace WinFormsApp2
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            int i;
+            int i, verif = 0;
             string user, pass;
 
             user = txtUser.Text;
             pass = txtPass.Text;
 
-            for(i = 0; i < US; i++)
+            for (i = 0; i < US; i++)
             {
-                if (DatosInicio.datos[0,i] == user)
+                if (DatosInicio.datos[0, i] == user)
                 {
-                    if (DatosInicio.datos[1,i] == pass)
+                    if (DatosInicio.datos[1, i] == pass)
                     {
-                        MessageBox
+                        MessageBox.Show("INICIO DE SESION EXITOSO");
+                        lblError.Text = "";
+                        verif = 1;
                     }
                 }
             }
+
+            if (verif != 1)
+            {
+                lblError.Text = "Usuario y/ o contraseña incorrectos. Verifique los datos ingresados";
+                txtUser.Text = "";
+                txtPass.Text = "";
+            }
+        }
+
+        private void btnLogIn_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }

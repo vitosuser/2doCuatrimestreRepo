@@ -36,6 +36,7 @@
             labelNoCuenta = new Label();
             btnRegister = new Button();
             btnLogIn = new Button();
+            lblError = new Label();
             SuspendLayout();
             // 
             // labelTitulo
@@ -62,7 +63,7 @@
             // 
             labelPassword.AutoSize = true;
             labelPassword.Font = new Font("Segoe UI", 13F);
-            labelPassword.Location = new Point(172, 273);
+            labelPassword.Location = new Point(162, 225);
             labelPassword.Name = "labelPassword";
             labelPassword.Size = new Size(110, 25);
             labelPassword.TabIndex = 2;
@@ -80,8 +81,9 @@
             // txtPass
             // 
             txtPass.Font = new Font("Segoe UI", 10F);
-            txtPass.Location = new Point(292, 273);
+            txtPass.Location = new Point(288, 226);
             txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '*';
             txtPass.Size = new Size(304, 25);
             txtPass.TabIndex = 4;
             // 
@@ -97,6 +99,7 @@
             // 
             // btnRegister
             // 
+            btnRegister.BackColor = Color.Black;
             btnRegister.ForeColor = SystemColors.HotTrack;
             btnRegister.Location = new Point(482, 447);
             btnRegister.Name = "btnRegister";
@@ -115,6 +118,17 @@
             btnLogIn.Text = "Iniciar sesion";
             btnLogIn.UseVisualStyleBackColor = true;
             btnLogIn.Click += btnLogIn_Click;
+            btnLogIn.Enter += btnLogIn_Click;
+            btnLogIn.KeyPress += btnLogIn_KeyPress;
+            // 
+            // lblError
+            // 
+            lblError.AutoSize = true;
+            lblError.ForeColor = Color.Red;
+            lblError.Location = new Point(216, 295);
+            lblError.Name = "lblError";
+            lblError.Size = new Size(0, 19);
+            lblError.TabIndex = 8;
             // 
             // disenador
             // 
@@ -122,6 +136,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.WindowFrame;
             ClientSize = new Size(900, 518);
+            Controls.Add(lblError);
             Controls.Add(btnLogIn);
             Controls.Add(btnRegister);
             Controls.Add(labelNoCuenta);
@@ -148,5 +163,6 @@
         private Label labelNoCuenta;
         private Button btnRegister;
         private Button btnLogIn;
+        private Label lblError;
     }
 }
