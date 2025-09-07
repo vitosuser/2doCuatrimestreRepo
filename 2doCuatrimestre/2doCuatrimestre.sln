@@ -29,11 +29,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Winforms", "Winforms", "{23
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJVideoTutorialAutomovil", "EJVideoTutorialAutomovil\EJVideoTutorialAutomovil.csproj", "{FC336A44-A283-4F87-87D7-A5DC512CE1FD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinForms (2)", "WinForms (2)", "{892A5BB3-DA4B-4129-A00B-6946183BEA02}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Personal", "Personal", "{892A5BB3-DA4B-4129-A00B-6946183BEA02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prueba clase", "WinFormsApp1\prueba clase.csproj", "{F51A18BF-6EC2-464F-891B-ADF155740671}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prueba inicio sesion", "WinFormsApp2\prueba inicio sesion.csproj", "{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjNotaEscolares", "EjNotaEscolares\EjNotaEscolares.csproj", "{B48DF53F-7440-4E19-BE77-35239AC723FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48DF53F-7440-4E19-BE77-35239AC723FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48DF53F-7440-4E19-BE77-35239AC723FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48DF53F-7440-4E19-BE77-35239AC723FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48DF53F-7440-4E19-BE77-35239AC723FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +119,7 @@ Global
 		{892A5BB3-DA4B-4129-A00B-6946183BEA02} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F51A18BF-6EC2-464F-891B-ADF155740671} = {892A5BB3-DA4B-4129-A00B-6946183BEA02}
 		{C041AE7D-7F3C-4C00-B0D4-3ADAE5C906FB} = {892A5BB3-DA4B-4129-A00B-6946183BEA02}
+		{B48DF53F-7440-4E19-BE77-35239AC723FA} = {892A5BB3-DA4B-4129-A00B-6946183BEA02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EE71410-DF5E-4905-A7AD-80C6D9AB76EB}
