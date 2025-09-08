@@ -34,7 +34,7 @@ namespace prueba_inicio_sesion
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close(); // agregar if para que se cierre o no si no hay nada en los textboxes
         }
     }
 }
