@@ -37,9 +37,9 @@
             txtNota = new TextBox();
             lblNota = new Label();
             gboxTipo = new GroupBox();
-            rdioTP = new RadioButton();
-            rdioParcial = new RadioButton();
             rdioFinal = new RadioButton();
+            rdioParcial = new RadioButton();
+            rdioTP = new RadioButton();
             mnstrp1 = new MenuStrip();
             notasToolStripMenuItem = new ToolStripMenuItem();
             planillaToolStripMenuItem = new ToolStripMenuItem();
@@ -49,6 +49,7 @@
             btn = new Button();
             ctxMenu = new ContextMenuStrip(components);
             limpiarEntradasToolStripMenuItem = new ToolStripMenuItem();
+            salirToolStripMenuItem1 = new ToolStripMenuItem();
             gboxTipo.SuspendLayout();
             mnstrp1.SuspendLayout();
             ctxMenu.SuspendLayout();
@@ -120,16 +121,15 @@
             gboxTipo.TabStop = false;
             gboxTipo.Text = "Tipo";
             // 
-            // rdioTP
+            // rdioFinal
             // 
-            rdioTP.AutoSize = true;
-            rdioTP.Location = new Point(15, 34);
-            rdioTP.Name = "rdioTP";
-            rdioTP.Size = new Size(109, 19);
-            rdioTP.TabIndex = 0;
-            rdioTP.TabStop = true;
-            rdioTP.Text = "Trabajo Practico";
-            rdioTP.UseVisualStyleBackColor = true;
+            rdioFinal.AutoSize = true;
+            rdioFinal.Location = new Point(15, 84);
+            rdioFinal.Name = "rdioFinal";
+            rdioFinal.Size = new Size(50, 19);
+            rdioFinal.TabIndex = 2;
+            rdioFinal.Text = "Final";
+            rdioFinal.UseVisualStyleBackColor = true;
             // 
             // rdioParcial
             // 
@@ -138,20 +138,20 @@
             rdioParcial.Name = "rdioParcial";
             rdioParcial.Size = new Size(60, 19);
             rdioParcial.TabIndex = 1;
-            rdioParcial.TabStop = true;
             rdioParcial.Text = "Parcial";
             rdioParcial.UseVisualStyleBackColor = true;
             // 
-            // rdioFinal
+            // rdioTP
             // 
-            rdioFinal.AutoSize = true;
-            rdioFinal.Location = new Point(15, 84);
-            rdioFinal.Name = "rdioFinal";
-            rdioFinal.Size = new Size(50, 19);
-            rdioFinal.TabIndex = 2;
-            rdioFinal.TabStop = true;
-            rdioFinal.Text = "Final";
-            rdioFinal.UseVisualStyleBackColor = true;
+            rdioTP.AutoSize = true;
+            rdioTP.Checked = true;
+            rdioTP.Location = new Point(15, 34);
+            rdioTP.Name = "rdioTP";
+            rdioTP.Size = new Size(109, 19);
+            rdioTP.TabIndex = 0;
+            rdioTP.TabStop = true;
+            rdioTP.Text = "Trabajo Practico";
+            rdioTP.UseVisualStyleBackColor = true;
             // 
             // mnstrp1
             // 
@@ -171,9 +171,12 @@
             // 
             // planillaToolStripMenuItem
             // 
+            planillaToolStripMenuItem.AutoToolTip = true;
             planillaToolStripMenuItem.Name = "planillaToolStripMenuItem";
-            planillaToolStripMenuItem.Size = new Size(180, 22);
+            planillaToolStripMenuItem.Size = new Size(112, 22);
             planillaToolStripMenuItem.Text = "Planilla";
+            planillaToolStripMenuItem.ToolTipText = "Vea la planilla con todas las notas subidas";
+            planillaToolStripMenuItem.Click += planillaToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 
@@ -185,8 +188,9 @@
             // acercaDeToolStripMenuItem
             // 
             acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            acercaDeToolStripMenuItem.Size = new Size(180, 22);
+            acercaDeToolStripMenuItem.Size = new Size(126, 22);
             acercaDeToolStripMenuItem.Text = "Acerca de";
+            acercaDeToolStripMenuItem.Click += acercaDeToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
@@ -195,6 +199,7 @@
             salirToolStripMenuItem.RightToLeft = RightToLeft.No;
             salirToolStripMenuItem.Size = new Size(41, 20);
             salirToolStripMenuItem.Text = "Salir";
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // btn
             // 
@@ -204,18 +209,27 @@
             btn.TabIndex = 8;
             btn.Text = "Guardar";
             btn.UseVisualStyleBackColor = true;
+            btn.Click += btn_Click;
             // 
             // ctxMenu
             // 
-            ctxMenu.Items.AddRange(new ToolStripItem[] { limpiarEntradasToolStripMenuItem });
+            ctxMenu.Items.AddRange(new ToolStripItem[] { limpiarEntradasToolStripMenuItem, salirToolStripMenuItem1 });
             ctxMenu.Name = "ctxMenu";
-            ctxMenu.Size = new Size(181, 48);
+            ctxMenu.Size = new Size(181, 70);
             // 
             // limpiarEntradasToolStripMenuItem
             // 
             limpiarEntradasToolStripMenuItem.Name = "limpiarEntradasToolStripMenuItem";
             limpiarEntradasToolStripMenuItem.Size = new Size(180, 22);
             limpiarEntradasToolStripMenuItem.Text = "Limpiar entradas";
+            limpiarEntradasToolStripMenuItem.Click += limpiarEntradasToolStripMenuItem_Click;
+            // 
+            // salirToolStripMenuItem1
+            // 
+            salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            salirToolStripMenuItem1.Size = new Size(180, 22);
+            salirToolStripMenuItem1.Text = "Salir";
+            salirToolStripMenuItem1.Click += salirToolStripMenuItem1_Click;
             // 
             // formNotas
             // 
@@ -223,6 +237,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GrayText;
             ClientSize = new Size(447, 450);
+            ContextMenuStrip = ctxMenu;
             Controls.Add(btn);
             Controls.Add(gboxTipo);
             Controls.Add(lblNota);
@@ -266,5 +281,6 @@
         private Button btn;
         private ContextMenuStrip ctxMenu;
         private ToolStripMenuItem limpiarEntradasToolStripMenuItem;
+        private ToolStripMenuItem salirToolStripMenuItem1;
     }
 }
