@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nodo // cambiar por tp lista enlazada y cmabiar nombre en vez de clase 1, que se llame Nodo
+namespace TPListaEnlazada 
 {
         public class Nodo
         {

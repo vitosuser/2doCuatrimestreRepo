@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nodo //cambiar el nombre de la clase por ListaEnlazada, en vez de class2
+namespace TPListaEnlazada //cambiar el nombre de la clase por ListaEnlazada, en vez de class2
 {
     public class ListaEnlazada
     {

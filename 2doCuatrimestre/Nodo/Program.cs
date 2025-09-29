@@ -1,6 +1,4 @@
-﻿using Nodo;
-
-namespace Nodo //cambiar por tp lista enlazada
+﻿namespace TPListaEnlazada 
 {
     internal class Program
     {
