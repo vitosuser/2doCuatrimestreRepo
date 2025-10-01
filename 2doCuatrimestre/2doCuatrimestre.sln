@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjClaseMenuIA", "EjClaseMen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPEstructurasDinamicas1Parte1", "TPEstructurasDinamicas1(tp 2)\TPEstructurasDinamicas1Parte1.csproj", "{865EE907-A25A-47A3-AE3D-FFED1AB075E2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPEstructurasDinamicasI", "TPEstructurasDinamicasI", "{85602233-74AE-4982-B901-590143BBFFB3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPEstructurasDinamicas2", "TPEstructurasDinamicas2", "{85602233-74AE-4982-B901-590143BBFFB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
