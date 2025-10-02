@@ -5,7 +5,7 @@ namespace TPEstructurasDinamicas1_tp_2_
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             bool salir = false;
 
@@ -23,24 +23,24 @@ namespace TPEstructurasDinamicas1_tp_2_
                 Console.WriteLine("║ 6. Salir                                       ║");
                 Console.WriteLine("╚════════════════════════════════════════════════╝");
                 Console.Write("\nSeleccione una opción: ");
-                //para cada menu de ejercicios crear una lista
+                
                 string seleccionado = Console.ReadLine();
 
                 switch (seleccionado)
                 {
-                    case "1": EjerciciosList();
+                    case "1": EjerciciosList.submenuList.menu();
                         break;
 
-                    case "2": EjerciciosLinkedList();
+                    case "2": //EjerciciosLinkedList();
                         break;
 
-                    case "3": EjerciciosStack();
+                    case "3": //EjerciciosStack();
                         break;
 
-                    case "4": EjerciciosQueue();
+                    case "4": //EjerciciosQueue();
                         break;
 
-                    case "5": EjerciciosDictionary();
+                    case "5": //EjerciciosDictionary();
                         break;
 
                     case "6": salir = true;
@@ -57,6 +57,7 @@ namespace TPEstructurasDinamicas1_tp_2_
 
         public static void Pause()
         {
+            Console.WriteLine("\n");
             Console.WriteLine("Oprima una tecla para continuar");
             Console.ReadKey();
         }
