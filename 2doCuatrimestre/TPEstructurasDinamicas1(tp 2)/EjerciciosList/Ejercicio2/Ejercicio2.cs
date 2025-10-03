@@ -44,6 +44,10 @@ namespace TPEstructurasDinamicas1_tp_2_.EjerciciosList.Ejercicio2
                         Program.Main();
                         break;
 
+                    default: Console.WriteLine("Valor no valido. Ingrese un numero del 1 al 4");
+                        Program.Pause();
+                        break;
+
                 }
 
             }

@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="EjerciciosLinkedList\" />
-    <Folder Include="EjerciciosStack\" />
     <Folder Include="EjerciciosQueue\" />
     <Folder Include="EjerciciosDictionary\" />
   </ItemGroup>

@@ -34,7 +34,7 @@ namespace TPEstructurasDinamicas1_tp_2_
                     case "2": //EjerciciosLinkedList();
                         break;
 
-                    case "3": //EjerciciosStack();
+                    case "3": EjerciciosStack.submenuStack.menuStack();
                         break;
 
                     case "4": //EjerciciosQueue();
