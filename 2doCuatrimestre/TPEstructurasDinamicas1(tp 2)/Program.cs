@@ -37,10 +37,10 @@ namespace TPEstructurasDinamicas1_tp_2_
                     case "3": EjerciciosStack.submenuStack.menuStack();
                         break;
 
-                    case "4": //EjerciciosQueue();
+                    case "4": EjerciciosQueue.submenuQueue.menuQueue();
                         break;
 
-                    case "5": //EjerciciosDictionary();
+                    case "5": EjerciciosDictionary.submenuDictionary.menuDictionary();
                         break;
 
                     case "6": salir = true;
