@@ -49,7 +49,7 @@ namespace TPEstructurasDinamicas1_tp_2_
 
                     default: 
                         Console.WriteLine("Valor no valido. Ingrese un numero del 1 al 6");
-                        Pause(); // crear funcion pause
+                        Pause(); 
                         break;
                 }
             }
