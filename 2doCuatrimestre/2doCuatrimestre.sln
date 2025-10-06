@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPEstructurasDinamicas1Part
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TPEstructurasDinamicas2", "TPEstructurasDinamicas2", "{85602233-74AE-4982-B901-590143BBFFB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPEstructurasDinamicasParte2", "TPEstructurasDinamicasParte2\TPEstructurasDinamicasParte2.csproj", "{17D12ED5-B919-45B5-BE4D-D130ADF66272}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,10 @@ Global
 		{865EE907-A25A-47A3-AE3D-FFED1AB075E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{865EE907-A25A-47A3-AE3D-FFED1AB075E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{865EE907-A25A-47A3-AE3D-FFED1AB075E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D12ED5-B919-45B5-BE4D-D130ADF66272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D12ED5-B919-45B5-BE4D-D130ADF66272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D12ED5-B919-45B5-BE4D-D130ADF66272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D12ED5-B919-45B5-BE4D-D130ADF66272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,6 +187,7 @@ Global
 		{B8DA8545-DEEB-460D-994D-E662E39C8CA2} = {FEF8327A-6CE9-4CD0-A770-C2DA9F630154}
 		{865EE907-A25A-47A3-AE3D-FFED1AB075E2} = {85602233-74AE-4982-B901-590143BBFFB3}
 		{85602233-74AE-4982-B901-590143BBFFB3} = {FEF8327A-6CE9-4CD0-A770-C2DA9F630154}
+		{17D12ED5-B919-45B5-BE4D-D130ADF66272} = {85602233-74AE-4982-B901-590143BBFFB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1EE71410-DF5E-4905-A7AD-80C6D9AB76EB}
