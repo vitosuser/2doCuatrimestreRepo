@@ -31,13 +31,13 @@ namespace TPEstructurasDinamicas1_tp_2_.EjerciciosLinkedList
                 switch (seleccionado)
                 {
                     case "1":
-                        //Ejercicio1.Ejericicio1LinkedList.menuEj1LinkedList();
+                        Ejercicio1.Ejercicio1LinkedList.menuEj1LinkedList();
                         break;
                     case "2":
-                        //Ejercicio2.Ejericicio2LinkedList.menuEj2LinkedList();
+                        Ejercicio2.Ejercicio2LinkedList.menuEj2LinkedList();
                         break;
                     case "3":
-                        //Ejercicio3.Ejericicio3LinkedList.menuEj3LinkedList();
+                        Ejercicio3.Ejercicio3LinkedList.menuEj3LinkedList();
                         break;
                     case "4":
                         volver = true;
