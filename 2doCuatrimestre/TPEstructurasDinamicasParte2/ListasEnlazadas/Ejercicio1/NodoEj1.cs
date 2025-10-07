@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TPEstructurasDinamicasParte2.Listas_Enlazadas.Ejercicio1
+namespace TPEstructurasDinamicasParte2.ListasEnlazadas.Ejercicio1
 {
     public class NodoEj1
     {
@@ -15,6 +15,11 @@ namespace TPEstructurasDinamicasParte2.Listas_Enlazadas.Ejercicio1
         {
             Nombre = nombre;
             Siguiente = null;
+        }
+
+        public override string ToString()
+        {
+            return $"Nombre: {Nombre}" ;
         }
     }
 }

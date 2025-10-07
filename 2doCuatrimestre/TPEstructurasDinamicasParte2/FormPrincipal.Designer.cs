@@ -121,6 +121,7 @@
             eJ1ToolStripMenuItem.Name = "eJ1ToolStripMenuItem";
             eJ1ToolStripMenuItem.Size = new Size(257, 22);
             eJ1ToolStripMenuItem.Text = "EJ 1:  Lista de Espera Restaurante";
+            eJ1ToolStripMenuItem.Click += eJ1ToolStripMenuItem_Click;
             // 
             // eJ2ToolStripMenuItem
             // 
