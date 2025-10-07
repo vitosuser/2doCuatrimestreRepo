@@ -15,6 +15,7 @@ namespace TPEstructurasDinamicasParte2.Listas
     {
         List<Productos> lista = new List<Productos>();
 
+
         public FormEj1Listas()
         {
             InitializeComponent();
@@ -32,24 +33,7 @@ namespace TPEstructurasDinamicasParte2.Listas
 
         private void rdioMostrar_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdioMostrar.Checked)
-            {
-                lblNombre.Visible = false;
-                lblCantidad.Visible = false;
-                txtNombre.Visible = false;
-                txtCantidad.Visible = false;
-                txtMostrar.Visible = true;
 
-                //desactivo los botones
-                btnEliminar.Visible = false;
-                btnEliminar.Enabled = false;
-
-                btnAgregar.Visible = false;
-                btnAgregar.Enabled = false;
-
-                btnBuscar.Visible = false;
-                btnBuscar.Enabled = false;
-            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -65,7 +49,6 @@ namespace TPEstructurasDinamicasParte2.Listas
                 lblCantidad.Visible = true;
                 txtNombre.Visible = true;
                 txtCantidad.Visible = true;
-                txtMostrar.Visible = false;
 
                 btnEliminar.Visible = false;
                 btnEliminar.Enabled = false;
@@ -87,7 +70,6 @@ namespace TPEstructurasDinamicasParte2.Listas
                 lblCantidad.Visible = false;
                 txtNombre.Visible = true;
                 txtCantidad.Visible = false;
-                txtMostrar.Visible = false;
 
                 btnEliminar.Visible = false;
                 btnEliminar.Enabled = false;
@@ -108,7 +90,6 @@ namespace TPEstructurasDinamicasParte2.Listas
                 lblCantidad.Visible = false;
                 txtNombre.Visible = true;
                 txtCantidad.Visible = false;
-                txtMostrar.Visible = false;
 
                 btnEliminar.Visible = true;
                 btnEliminar.Enabled = true;
@@ -125,22 +106,80 @@ namespace TPEstructurasDinamicasParte2.Listas
         {
             string nombre = txtNombre.Text;
 
-            if(!string.IsNullOrEmpty(nombre))
-            {
-                if(int.TryParse(txtCantidad.Text, out int cantidad))
-                {
 
-                    lista.Add(new Productos(nombre, cantidad));
+            if (!string.IsNullOrEmpty(nombre))
+            {
+                if (int.TryParse(txtCantidad.Text, out int cantidad))
+                {
+                    Productos nuevo = new Productos(nombre, cantidad);
+
+                    lista.Add(nuevo);
+                    listMostrar.Items.Add(nuevo); //para agregarlo a la lista
                 }
                 else
                 {
-                    MessageBox.Show("Ingrese un valor numero en Cantidad");
+                    MessageBox.Show("Ingrese un valor numerico en Cantidad");
                 }
             }
             else
             {
                 MessageBox.Show("Ingrese un nombre de producto");
             }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            string eliminar = txtNombre.Text.Trim().ToLower(); //ignoro espacios blancos y mayus
+
+            if (!string.IsNullOrEmpty(eliminar))
+            {
+                Productos eliminado = lista.Find(producto => producto.Nombre.Equals(eliminar, StringComparison.OrdinalIgnoreCase));
+
+                if (eliminado != null)
+                {
+                    lista.Remove(eliminado);
+                    listMostrar.Items.Remove(eliminado);
+
+                }
+                else
+                {
+                    MessageBox.Show("No se encontro el producto en la lista");
+                }
+            }
+            else
+            {
+                MessageBox.Show("La casilla Nombre esta vacia");
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string buscado = txtNombre.Text.Trim().ToLower();
+
+            if (!string.IsNullOrEmpty(buscado))
+            {
+                Productos encontrado = lista.Find(p => p.Nombre.Equals(buscado, StringComparison.OrdinalIgnoreCase));
+
+                if (encontrado != null)
+                {
+                    MessageBox.Show($"Producto Encontrado \n{encontrado}");
+                }
+                else
+                {
+                    MessageBox.Show("No se encontro el producto en la lista");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("La casilla Nombre esta vacia");
+
+            }
+        }
+
+        private void FormEj1Listas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

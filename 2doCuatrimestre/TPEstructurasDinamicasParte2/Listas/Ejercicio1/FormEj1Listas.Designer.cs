@@ -35,23 +35,24 @@
             txtNombre = new TextBox();
             txtCantidad = new TextBox();
             gboxAccion = new GroupBox();
-            rdioMostrar = new RadioButton();
             rdioEliminar = new RadioButton();
             rdioBuscar = new RadioButton();
             rdioAgregar = new RadioButton();
             lblSeleccione = new Label();
-            txtMostrar = new TextBox();
             btnAgregar = new Button();
             btnEliminar = new Button();
             btnBuscar = new Button();
+            listMostrar = new ListBox();
             gboxAccion.SuspendLayout();
             SuspendLayout();
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(581, 503);
+            btnSalir.Font = new Font("Segoe UI", 11F);
+            btnSalir.Location = new Point(507, 390);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(94, 29);
+            btnSalir.Size = new Size(92, 33);
             btnSalir.TabIndex = 0;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -61,9 +62,9 @@
             // 
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Segoe UI", 15F);
-            lblTitulo.Location = new Point(34, 43);
+            lblTitulo.Location = new Point(30, 32);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(252, 35);
+            lblTitulo.Size = new Size(199, 28);
             lblTitulo.TabIndex = 1;
             lblTitulo.Text = "Gestion de Inventario";
             lblTitulo.Click += lblTitulo_Click;
@@ -72,9 +73,9 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 10F);
-            lblNombre.Location = new Point(309, 152);
+            lblNombre.Location = new Point(270, 114);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(157, 23);
+            lblNombre.Size = new Size(126, 19);
             lblNombre.TabIndex = 2;
             lblNombre.Text = "Nombre Producto: ";
             lblNombre.Visible = false;
@@ -83,9 +84,9 @@
             // 
             lblCantidad.AutoSize = true;
             lblCantidad.Font = new Font("Segoe UI", 10F);
-            lblCantidad.Location = new Point(309, 205);
+            lblCantidad.Location = new Point(270, 154);
             lblCantidad.Name = "lblCantidad";
-            lblCantidad.Size = new Size(88, 23);
+            lblCantidad.Size = new Size(71, 19);
             lblCantidad.TabIndex = 3;
             lblCantidad.Text = "Cantidad: ";
             lblCantidad.Visible = false;
@@ -93,53 +94,44 @@
             // txtNombre
             // 
             txtNombre.Font = new Font("Segoe UI", 10F);
-            txtNombre.Location = new Point(475, 152);
+            txtNombre.Location = new Point(416, 114);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(259, 30);
+            txtNombre.Size = new Size(227, 25);
             txtNombre.TabIndex = 4;
             txtNombre.Visible = false;
             // 
             // txtCantidad
             // 
             txtCantidad.Font = new Font("Segoe UI", 10F);
-            txtCantidad.Location = new Point(419, 202);
+            txtCantidad.Location = new Point(367, 152);
+            txtCantidad.Margin = new Padding(3, 2, 3, 2);
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(125, 30);
+            txtCantidad.Size = new Size(110, 25);
             txtCantidad.TabIndex = 5;
             txtCantidad.Visible = false;
             // 
             // gboxAccion
             // 
-            gboxAccion.Controls.Add(rdioMostrar);
             gboxAccion.Controls.Add(rdioEliminar);
             gboxAccion.Controls.Add(rdioBuscar);
             gboxAccion.Controls.Add(rdioAgregar);
-            gboxAccion.Location = new Point(34, 127);
+            gboxAccion.Location = new Point(30, 97);
+            gboxAccion.Margin = new Padding(3, 2, 3, 2);
             gboxAccion.Name = "gboxAccion";
-            gboxAccion.Size = new Size(244, 209);
+            gboxAccion.Padding = new Padding(3, 2, 3, 2);
+            gboxAccion.Size = new Size(214, 127);
             gboxAccion.TabIndex = 7;
             gboxAccion.TabStop = false;
-            // 
-            // rdioMostrar
-            // 
-            rdioMostrar.AutoSize = true;
-            rdioMostrar.Font = new Font("Segoe UI", 10F);
-            rdioMostrar.Location = new Point(18, 166);
-            rdioMostrar.Name = "rdioMostrar";
-            rdioMostrar.Size = new Size(134, 27);
-            rdioMostrar.TabIndex = 3;
-            rdioMostrar.TabStop = true;
-            rdioMostrar.Text = "Mostrar Lista ";
-            rdioMostrar.UseVisualStyleBackColor = true;
-            rdioMostrar.CheckedChanged += rdioMostrar_CheckedChanged;
             // 
             // rdioEliminar
             // 
             rdioEliminar.AutoSize = true;
             rdioEliminar.Font = new Font("Segoe UI", 10F);
-            rdioEliminar.Location = new Point(18, 124);
+            rdioEliminar.Location = new Point(16, 93);
+            rdioEliminar.Margin = new Padding(3, 2, 3, 2);
             rdioEliminar.Name = "rdioEliminar";
-            rdioEliminar.Size = new Size(167, 27);
+            rdioEliminar.Size = new Size(135, 23);
             rdioEliminar.TabIndex = 2;
             rdioEliminar.TabStop = true;
             rdioEliminar.Text = "Eliminar Producto";
@@ -150,9 +142,10 @@
             // 
             rdioBuscar.AutoSize = true;
             rdioBuscar.Font = new Font("Segoe UI", 10F);
-            rdioBuscar.Location = new Point(18, 82);
+            rdioBuscar.Location = new Point(16, 62);
+            rdioBuscar.Margin = new Padding(3, 2, 3, 2);
             rdioBuscar.Name = "rdioBuscar";
-            rdioBuscar.Size = new Size(156, 27);
+            rdioBuscar.Size = new Size(127, 23);
             rdioBuscar.TabIndex = 1;
             rdioBuscar.TabStop = true;
             rdioBuscar.Text = "Buscar Producto";
@@ -163,9 +156,10 @@
             // 
             rdioAgregar.AutoSize = true;
             rdioAgregar.Font = new Font("Segoe UI", 10F);
-            rdioAgregar.Location = new Point(18, 40);
+            rdioAgregar.Location = new Point(16, 30);
+            rdioAgregar.Margin = new Padding(3, 2, 3, 2);
             rdioAgregar.Name = "rdioAgregar";
-            rdioAgregar.Size = new Size(167, 27);
+            rdioAgregar.Size = new Size(136, 23);
             rdioAgregar.TabIndex = 0;
             rdioAgregar.TabStop = true;
             rdioAgregar.Text = "Agregar Producto";
@@ -176,28 +170,20 @@
             // 
             lblSeleccione.AutoSize = true;
             lblSeleccione.Font = new Font("Segoe UI", 10F);
-            lblSeleccione.Location = new Point(38, 101);
+            lblSeleccione.Location = new Point(30, 76);
             lblSeleccione.Name = "lblSeleccione";
-            lblSeleccione.Size = new Size(181, 23);
+            lblSeleccione.Size = new Size(143, 19);
             lblSeleccione.TabIndex = 8;
             lblSeleccione.Text = "Seleccione una opcion";
             lblSeleccione.Click += label1_Click;
             // 
-            // txtMostrar
-            // 
-            txtMostrar.Enabled = false;
-            txtMostrar.Location = new Point(41, 349);
-            txtMostrar.Multiline = true;
-            txtMostrar.Name = "txtMostrar";
-            txtMostrar.Size = new Size(425, 235);
-            txtMostrar.TabIndex = 9;
-            txtMostrar.Visible = false;
-            // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(657, 251);
+            btnAgregar.Font = new Font("Segoe UI", 10F);
+            btnAgregar.Location = new Point(575, 188);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(94, 29);
+            btnAgregar.Size = new Size(82, 36);
             btnAgregar.TabIndex = 10;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -206,34 +192,49 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(657, 203);
+            btnEliminar.Font = new Font("Segoe UI", 10F);
+            btnEliminar.Location = new Point(470, 188);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.Size = new Size(82, 36);
             btnEliminar.TabIndex = 11;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Visible = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(557, 203);
+            btnBuscar.Font = new Font("Segoe UI", 10F);
+            btnBuscar.Location = new Point(367, 188);
+            btnBuscar.Margin = new Padding(3, 2, 3, 2);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(94, 29);
+            btnBuscar.Size = new Size(82, 36);
             btnBuscar.TabIndex = 12;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
             btnBuscar.Visible = false;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // listMostrar
+            // 
+            listMostrar.FormattingEnabled = true;
+            listMostrar.ItemHeight = 15;
+            listMostrar.Location = new Point(30, 248);
+            listMostrar.Name = "listMostrar";
+            listMostrar.Size = new Size(303, 169);
+            listMostrar.TabIndex = 13;
             // 
             // FormEj1Listas
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(763, 604);
+            ClientSize = new Size(668, 438);
+            Controls.Add(listMostrar);
             Controls.Add(btnBuscar);
             Controls.Add(btnEliminar);
             Controls.Add(btnAgregar);
-            Controls.Add(txtMostrar);
             Controls.Add(lblSeleccione);
             Controls.Add(gboxAccion);
             Controls.Add(txtCantidad);
@@ -242,8 +243,10 @@
             Controls.Add(lblNombre);
             Controls.Add(lblTitulo);
             Controls.Add(btnSalir);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormEj1Listas";
             Text = "Formulario Ejercicio 1";
+            Load += FormEj1Listas_Load;
             gboxAccion.ResumeLayout(false);
             gboxAccion.PerformLayout();
             ResumeLayout(false);
@@ -260,14 +263,13 @@
         private TextBox txtCantidad;
         private ComboBox comboBox1;
         private GroupBox gboxAccion;
-        private RadioButton rdioMostrar;
         private RadioButton rdioEliminar;
         private RadioButton rdioBuscar;
         private RadioButton rdioAgregar;
         private Label lblSeleccione;
-        private TextBox txtMostrar;
         private Button btnAgregar;
         private Button btnEliminar;
         private Button btnBuscar;
+        private ListBox listMostrar;
     }
 }

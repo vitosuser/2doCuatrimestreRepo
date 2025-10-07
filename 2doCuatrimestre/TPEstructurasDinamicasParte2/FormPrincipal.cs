@@ -29,5 +29,20 @@ namespace TPEstructurasDinamicasParte2
 
             Ej1.ShowDialog();
         }
+
+        private void eJ2ListaDeTareasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Listas.FormEj2Listas Ej2 = new Listas.FormEj2Listas();
+
+
+            Ej2.ShowDialog();
+        }
+
+        private void eJ3CalificacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Listas.FormEj3Listas Ej3 = new Listas.FormEj3Listas();
+
+            Ej3.ShowDialog();
+        }
     }
 }

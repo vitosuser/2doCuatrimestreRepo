@@ -17,5 +17,10 @@ namespace TPEstructurasDinamicasParte2.Listas.Ejercicio1
             Cantidad = cantidad;
 
         }
+
+        public override string ToString() //para imprimir en listbox
+        {
+            return $"Nombre: {Nombre} - Cantidad: {Cantidad}";
+        }
     }
 }
