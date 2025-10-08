@@ -19,7 +19,7 @@ namespace TPEstructurasDinamicasParte2.ListasEnlazadas.Ejercicio1
 
         public override string ToString()
         {
-            return $"Nombre: {Nombre}" ;
+            return Nombre;
         }
     }
 }

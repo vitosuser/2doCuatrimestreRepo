@@ -55,7 +55,7 @@
             // btnEliminar
             // 
             btnEliminar.Font = new Font("Segoe UI", 10F);
-            btnEliminar.Location = new Point(463, 165);
+            btnEliminar.Location = new Point(472, 164);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(82, 36);
@@ -63,11 +63,12 @@
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Visible = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnAgregar
             // 
             btnAgregar.Font = new Font("Segoe UI", 10F);
-            btnAgregar.Location = new Point(608, 164);
+            btnAgregar.Location = new Point(617, 164);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(82, 36);
@@ -75,6 +76,7 @@
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Visible = false;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // lblSeleccione
             // 
@@ -144,7 +146,7 @@
             // txtCliente
             // 
             txtCliente.Font = new Font("Segoe UI", 11F);
-            txtCliente.Location = new Point(463, 102);
+            txtCliente.Location = new Point(472, 102);
             txtCliente.Margin = new Padding(3, 2, 3, 2);
             txtCliente.Name = "txtCliente";
             txtCliente.Size = new Size(227, 27);

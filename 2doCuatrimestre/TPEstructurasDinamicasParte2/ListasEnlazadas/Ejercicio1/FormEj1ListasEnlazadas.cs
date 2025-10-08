@@ -13,9 +13,9 @@ namespace TPEstructurasDinamicasParte2.Listas_Enlazadas.Ejercicio1
 {
     public partial class FormEj1ListasEnlazadas : Form
     {
-        private static NodoEj1? cabeza;
+        private NodoEj1? cabeza;
 
-        
+
         public FormEj1ListasEnlazadas()
         {
             InitializeComponent();
@@ -37,36 +37,8 @@ namespace TPEstructurasDinamicasParte2.Listas_Enlazadas.Ejercicio1
                 btnEliminar.Visible = false;
                 btnEliminar.Enabled = false;
 
-                string cliente = txtCliente.Text;
-
-                if (!string.IsNullOrEmpty(cliente))
-                {
-                    NodoEj1 nuevo = new NodoEj1(cliente);
-
-                    if(cabeza == null)
-                    {
-                        cabeza = nuevo;
-                    }
-                    else
-                    {
-                        NodoEj1 actual = cabeza;
-
-                        while(actual.Siguiente != null)
-                        {
-                            actual = actual.Siguiente;
-                        }
-
-                        actual.Siguiente = nuevo;
-                        listMostrar.Items.Add(nuevo);
-                        
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("La casilla Nombre Cliente esta vacia");
-                }
             }
-            
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -86,9 +58,27 @@ namespace TPEstructurasDinamicasParte2.Listas_Enlazadas.Ejercicio1
 
                 btnEliminar.Visible = false;
                 btnEliminar.Enabled = false;
+
+                if (cabeza != null)
+                {
+                    MessageBox.Show($"El cliente {cabeza.Nombre} fue sentado");
+
+                    listMostrar.Items.Remove(cabeza);
+
+                    cabeza = cabeza.Siguiente;
+
+
+
+                }
+                else
+                {
+                    MessageBox.Show("La lista de espera esta vacia");
+                }
+
+                rdioSentar.Checked = false;
             }
 
-            //agregar funcionamiento
+
         }
 
         private void rdioEliminar_CheckedChanged(object sender, EventArgs e)
@@ -104,7 +94,99 @@ namespace TPEstructurasDinamicasParte2.Listas_Enlazadas.Ejercicio1
                 btnEliminar.Visible = true;
                 btnEliminar.Enabled = true;
             }
-            //agregar funcionamiento
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string cliente = txtCliente.Text;
+
+            if (!string.IsNullOrEmpty(cliente))
+            {
+                NodoEj1 nuevo = new NodoEj1(cliente);
+
+                if (cabeza == null)
+                {
+                    cabeza = nuevo;
+                }
+                else
+                {
+                    NodoEj1 actual = cabeza;
+
+                    while (actual.Siguiente != null)
+                    {
+                        actual = actual.Siguiente;
+                    }
+
+                    actual.Siguiente = nuevo;
+
+                }
+
+                listMostrar.Items.Add(nuevo);
+
+            }
+            else
+            {
+                MessageBox.Show("La casilla Nombre Cliente esta vacia");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtCliente.Text.Trim();
+
+            if(cabeza != null)
+            {
+                if (!string.IsNullOrEmpty(nombre))
+                {
+                    bool encontrado = false;
+
+                    if (cabeza.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase))
+                    {
+                        listMostrar.Items.Remove(cabeza);
+                        cabeza = cabeza.Siguiente;
+                        encontrado = true;
+
+                    }
+                    else
+                    {
+                        NodoEj1 actual = cabeza;
+                        NodoEj1 anterior = null;
+
+                        while(actual != null && !actual.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase))
+                        {
+                            anterior = actual;
+                            actual = actual.Siguiente;
+                        }
+
+                        if(actual != null)
+                        {
+                            anterior.Siguiente = actual.Siguiente;
+                            listMostrar.Items.Remove(actual);
+                            encontrado = true;
+
+
+                        }
+
+                    }
+                    if (!encontrado)
+                    {
+                      
+                        MessageBox.Show($"No se encontro el nombre {nombre} en la lista de espera");
+                        
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("La casilla Nombre Cliente esta vacia");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("La lista de espera esta vacia");
+
+            }
         }
     }
 }

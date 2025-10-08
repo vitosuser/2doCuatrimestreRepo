@@ -47,7 +47,9 @@ namespace TPEstructurasDinamicasParte2
 
         private void eJ1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ListasEnlazadas.FormEj1ListasEnlazadas Ej1 = new ListasEnlazadas.FormEj1ListasEnlazadas();
+            Listas_Enlazadas.Ejercicio1.FormEj1ListasEnlazadas Ej1 = new Listas_Enlazadas.Ejercicio1.FormEj1ListasEnlazadas();
+
+            Ej1.ShowDialog();
         }
     }
 }
