@@ -128,12 +128,14 @@
             eJ2ToolStripMenuItem.Name = "eJ2ToolStripMenuItem";
             eJ2ToolStripMenuItem.Size = new Size(257, 22);
             eJ2ToolStripMenuItem.Text = "EJ 2: Historial Editor de Texto";
+            eJ2ToolStripMenuItem.Click += eJ2ToolStripMenuItem_Click;
             // 
             // eJ3ToolStripMenuItem
             // 
             eJ3ToolStripMenuItem.Name = "eJ3ToolStripMenuItem";
             eJ3ToolStripMenuItem.Size = new Size(257, 22);
             eJ3ToolStripMenuItem.Text = "EJ 3: Lista de Reproduccion Musica";
+            eJ3ToolStripMenuItem.Click += eJ3ToolStripMenuItem_Click;
             // 
             // menuPilas
             // 
@@ -147,18 +149,21 @@
             eJ1ToolStripMenuItem1.Name = "eJ1ToolStripMenuItem1";
             eJ1ToolStripMenuItem1.Size = new Size(296, 22);
             eJ1ToolStripMenuItem1.Text = "EJ 1: Simulador de Pila de Platos";
+            eJ1ToolStripMenuItem1.Click += eJ1ToolStripMenuItem1_Click;
             // 
             // eJ2ToolStripMenuItem1
             // 
             eJ2ToolStripMenuItem1.Name = "eJ2ToolStripMenuItem1";
             eJ2ToolStripMenuItem1.Size = new Size(296, 22);
             eJ2ToolStripMenuItem1.Text = "EJ 2: Verificador de Parentesis Balanceados";
+            eJ2ToolStripMenuItem1.Click += eJ2ToolStripMenuItem1_Click;
             // 
             // eJ3ToolStripMenuItem1
             // 
             eJ3ToolStripMenuItem1.Name = "eJ3ToolStripMenuItem1";
             eJ3ToolStripMenuItem1.Size = new Size(296, 22);
             eJ3ToolStripMenuItem1.Text = "EJ 3: Historial de Navegacion Web";
+            eJ3ToolStripMenuItem1.Click += eJ3ToolStripMenuItem1_Click;
             // 
             // menuQueue
             // 

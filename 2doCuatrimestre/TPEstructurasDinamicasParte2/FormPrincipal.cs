@@ -51,5 +51,41 @@ namespace TPEstructurasDinamicasParte2
 
             Ej1.ShowDialog();
         }
+
+        private void eJ2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListasEnlazadas.Ejercicio2.FormEj2ListasEnlazadas Ej2 = new ListasEnlazadas.Ejercicio2.FormEj2ListasEnlazadas();
+
+            Ej2.ShowDialog();
+        }
+
+        private void eJ3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ListasEnlazadas.Ejercicio3.FormEj3ListasEnlazadas Ej3 = new ListasEnlazadas.Ejercicio3.FormEj3ListasEnlazadas();
+
+            Ej3.ShowDialog();
+        }
+
+        private void eJ1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Pilas.FormEj1Pilas Ej1 = new Pilas.FormEj1Pilas();
+
+            Ej1.ShowDialog();
+        }
+
+        private void eJ2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Pilas.FormEj2Pilas Ej2 = new Pilas.FormEj2Pilas();
+
+            Ej2.ShowDialog();
+
+        }
+
+        private void eJ3ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Pilas.FormEj3Pilas Ej3 = new Pilas.FormEj3Pilas();
+
+            Ej3.ShowDialog();
+        }
     }
 }

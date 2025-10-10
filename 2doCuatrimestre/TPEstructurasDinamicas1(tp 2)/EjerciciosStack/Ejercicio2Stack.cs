@@ -21,7 +21,7 @@ namespace TPEstructurasDinamicas1_tp_2_.EjerciciosStack
                 Console.WriteLine("║        Verificador Parentesis Balancedos       ║");
                 Console.WriteLine("╠════════════════════════════════════════════════╣");
                 Console.WriteLine("║ 1. Agregar caracter                            ║");
-                Console.WriteLine("║ 2. Verificar Parentes/Llaves/Corchetes         ║");
+                Console.WriteLine("║ 2. Verificar Parentesis/Llaves/Corchetes       ║");
                 Console.WriteLine("║ 3. Menu Ejercicios Stack                       ║");
                 Console.WriteLine("╚════════════════════════════════════════════════╝");
                 Console.Write("\nSeleccione una opción: ");
