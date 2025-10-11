@@ -47,6 +47,7 @@
             listMostrar.Name = "listMostrar";
             listMostrar.Size = new Size(443, 169);
             listMostrar.TabIndex = 25;
+            listMostrar.SelectedIndexChanged += listMostrar_SelectedIndexChanged;
             // 
             // lblSeleccione
             // 
@@ -57,6 +58,7 @@
             lblSeleccione.Size = new Size(143, 19);
             lblSeleccione.TabIndex = 21;
             lblSeleccione.Text = "Seleccione una opcion";
+//            lblSeleccione.Click += this.lblSeleccione_Click;
             // 
             // gboxAccion
             // 
@@ -70,6 +72,7 @@
             gboxAccion.Size = new Size(639, 127);
             gboxAccion.TabIndex = 20;
             gboxAccion.TabStop = false;
+            //gboxAccion.Enter += this.gboxAccion_Enter;
             // 
             // rdioMostrar
             // 
@@ -122,6 +125,7 @@
             lblTitulo.Size = new Size(250, 28);
             lblTitulo.TabIndex = 15;
             lblTitulo.Text = "Simulador de Pila de Platos";
+            //lblTitulo.Click += this.lblTitulo_Click;
             // 
             // btnSalir
             // 
@@ -148,6 +152,7 @@
             Controls.Add(btnSalir);
             Name = "FormEj1Pilas";
             Text = "Formulario Ejercicio 1 Pilas";
+            //Load += this.FormEj1Pilas_Load;
             gboxAccion.ResumeLayout(false);
             gboxAccion.PerformLayout();
             ResumeLayout(false);

@@ -90,6 +90,7 @@ namespace TPEstructurasDinamicasParte2.Listas
             {
                 Tarea encontrada = tareas.Find(p => p.Nombre.Equals(eliminar, StringComparison.OrdinalIgnoreCase));
 
+                
                 if (encontrada != null)
                 {
                     tareas.Remove(encontrada);

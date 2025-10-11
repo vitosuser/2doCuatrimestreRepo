@@ -51,7 +51,7 @@ namespace TPEstructurasDinamicasParte2.Pilas
                 {
                     MessageBox.Show("La pila esta vacia, no hay platos que desapilar", "Error");
                 }
-                    rdioDesapilar.Checked = false;
+                rdioDesapilar.Checked = false;
 
             }
         }
@@ -75,6 +75,11 @@ namespace TPEstructurasDinamicasParte2.Pilas
 
                 rdioMostrar.Checked = false;
             }
+        }
+
+        private void listMostrar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

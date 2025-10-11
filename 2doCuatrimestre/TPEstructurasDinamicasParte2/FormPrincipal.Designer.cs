@@ -177,12 +177,14 @@
             eJ1ToolStripMenuItem2.Name = "eJ1ToolStripMenuItem2";
             eJ1ToolStripMenuItem2.Size = new Size(316, 22);
             eJ1ToolStripMenuItem2.Text = "EJ 1: Cola de Impresion de Documentos";
+            eJ1ToolStripMenuItem2.Click += eJ1ToolStripMenuItem2_Click;
             // 
             // eJ2ToolStripMenuItem2
             // 
             eJ2ToolStripMenuItem2.Name = "eJ2ToolStripMenuItem2";
             eJ2ToolStripMenuItem2.Size = new Size(316, 22);
             eJ2ToolStripMenuItem2.Text = "EJ 2: Simulador de Call Center";
+            eJ2ToolStripMenuItem2.Click += eJ2ToolStripMenuItem2_Click;
             // 
             // eJ3ToolStripMenuItem2
             // 
@@ -203,18 +205,21 @@
             eJ1DirectorioTelefonicoToolStripMenuItem.Name = "eJ1DirectorioTelefonicoToolStripMenuItem";
             eJ1DirectorioTelefonicoToolStripMenuItem.Size = new Size(283, 22);
             eJ1DirectorioTelefonicoToolStripMenuItem.Text = "EJ 1: Directorio Telefonico";
+            eJ1DirectorioTelefonicoToolStripMenuItem.Click += eJ1DirectorioTelefonicoToolStripMenuItem_Click;
             // 
             // eJ2ToolStripMenuItem3
             // 
             eJ2ToolStripMenuItem3.Name = "eJ2ToolStripMenuItem3";
             eJ2ToolStripMenuItem3.Size = new Size(283, 22);
             eJ2ToolStripMenuItem3.Text = "EJ 2: Catalogo de Productos por Codigo";
+            eJ2ToolStripMenuItem3.Click += eJ2ToolStripMenuItem3_Click;
             // 
             // eJ3TraductorDeIdiomasToolStripMenuItem
             // 
             eJ3TraductorDeIdiomasToolStripMenuItem.Name = "eJ3TraductorDeIdiomasToolStripMenuItem";
             eJ3TraductorDeIdiomasToolStripMenuItem.Size = new Size(283, 22);
             eJ3TraductorDeIdiomasToolStripMenuItem.Text = "EJ 3: Traductor de Idiomas";
+            eJ3TraductorDeIdiomasToolStripMenuItem.Click += eJ3TraductorDeIdiomasToolStripMenuItem_Click;
             // 
             // ayudaToolStripMenuItem
             // 

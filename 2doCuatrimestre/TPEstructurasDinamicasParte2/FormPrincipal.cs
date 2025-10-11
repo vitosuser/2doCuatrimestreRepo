@@ -10,7 +10,9 @@ namespace TPEstructurasDinamicasParte2
 
         private void eJ3ToolStripMenuItem2_Click(object sender, EventArgs e)
         {
+            Colas.FormEj3Colas Ej3 = new Colas.FormEj3Colas();
 
+            Ej3.ShowDialog();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -86,6 +88,43 @@ namespace TPEstructurasDinamicasParte2
             Pilas.FormEj3Pilas Ej3 = new Pilas.FormEj3Pilas();
 
             Ej3.ShowDialog();
+        }
+
+        private void eJ1ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Colas.FormEj1Colas Ej1 = new Colas.FormEj1Colas();
+
+            Ej1.ShowDialog();
+        }
+
+        private void eJ2ToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Colas.FormEj2Colas Ej2 = new Colas.FormEj2Colas();
+
+            Ej2.ShowDialog();
+        }
+
+        private void eJ1DirectorioTelefonicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Diccionario.FormEj1Diccionario Ej1 = new Diccionario.FormEj1Diccionario();
+
+            Ej1.ShowDialog();
+        }
+
+        private void eJ2ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Diccionario.FormEj2Diccionario Ej2 = new Diccionario.FormEj2Diccionario();
+
+            Ej2.ShowDialog();
+
+        }
+
+        private void eJ3TraductorDeIdiomasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Diccionario.FormEj3Diccionario Ej3 = new Diccionario.FormEj3Diccionario();
+
+            Ej3.ShowDialog();
+
         }
     }
 }
