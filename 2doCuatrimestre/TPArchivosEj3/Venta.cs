@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,7 @@ namespace TPArchivosEj3
 
         public override string ToString()
         {
-            return $"{Fecha:dd/MM/yyyy},{Nombre},{Cantidad},{Precio}";
+            return $"{Fecha:dd/MM/yyyy},{Nombre},{Cantidad},{Precio.ToString(CultureInfo.InvariantCulture)}";
         }
 
         public static Venta Parse(string linea)
@@ -41,7 +42,7 @@ namespace TPArchivosEj3
                 DateTime fecha = DateTime.ParseExact(partes[0].Trim(), "dd/MM/yyyy", null);
                 string nombre = partes[1].Trim();
                 int cantidad = int.Parse(partes[2].Trim());
-                float precio = float.Parse(partes[3].Trim());
+                float precio = float.Parse(partes[3].Trim(), CultureInfo.InvariantCulture);
 
                 return new Venta(fecha, nombre, cantidad, precio);
             } 

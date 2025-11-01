@@ -21,13 +21,13 @@ namespace TPArchivosEj2
 
         public override string ToString()
         {
-            return $"{Nombre},{Edad},{Promedio}";
+            return $"{Nombre}-{Edad}-{Promedio}";
         }
 
         public static Estudiante Parse(string linea)
         {
             string lineaLimpia = linea.Trim();
-            string[] partes = lineaLimpia.Split(',');
+            string[] partes = lineaLimpia.Split('-');
 
             if(partes.Length != 3)
             {

@@ -1,5 +1,6 @@
 ﻿namespace TPArchivosEj3
 {
+    using System.Globalization;
     internal class Program
     {
         static GestorVentas gestor = new GestorVentas();
@@ -97,7 +98,7 @@
                             {
                             //verif precio
                                 Console.WriteLine("Ingrese el valor total de la venta: ");
-                                if(!float.TryParse(Console.ReadLine(), out float precio))
+                                if(!float.TryParse(Console.ReadLine(), NumberStyles.Float, CultureInfo.CurrentCulture, out float precio))
                                 {
 
                                 Console.WriteLine("Debe ingresar un numero en el valor total de la venta");
